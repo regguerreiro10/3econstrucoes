@@ -3259,13 +3259,16 @@ Main Header
 
 ***/
 .logo {
-  width: 181px;
+  width: auto;
 }
 .logo a {
   display: block;
 }
 .logo a img {
-  width: 100%;
+  width: auto;              /* não força a ocupar 100% da div */
+  height: auto;             /* mantém proporção */
+  max-height: 90px;         /* altura máxima no header (ajusta como quiser) */
+  max-width: 100%;          /* pra não estourar em telas pequenas */
 }
 
 .header-span {
@@ -4834,7 +4837,7 @@ Sticky Header
   padding: 10px 0;
 }
 .sticky-header .logo img {
-  max-height: 40px;
+  max-height: 60px;
 }
 .sticky-header .nav-outer {
   background: none;
