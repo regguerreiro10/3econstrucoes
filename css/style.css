@@ -8668,6 +8668,12 @@ Section Title
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+
+.about-section-seven .content-column .inner-column .list li {
+  font-size: 14px;   /* ou 13px / 12px se quiser ainda menor */
+  line-height: 1.4;
+}
+
 .about-section-seven .content-column .inner-column .list::before {
   position: absolute;
   bottom: 0;
@@ -17556,7 +17562,7 @@ CONTACT Details
       flex-wrap: wrap;
 }
 .process-section-four .content-column .inner-column .list ul li {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 700;
   font-family: var(--title-font);
   color: #222222;
