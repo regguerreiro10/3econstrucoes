@@ -23076,3 +23076,21 @@ $grid-breakpoints: (
   0%   { transform: scale(.92); opacity: .85; }
   100% { transform: scale(1.25); opacity: 0; }
 }
+
+.footer-top .info-item h5.title{
+  font-size: 10px !important;
+  line-height: 1.2 !important;
+  margin: 0 !important;
+}
+
+/* opcional: também ajustar o span (label) */
+.footer-top .info-item span{
+  font-size: 13px;
+  line-height: 1.2;
+}
+
+/* Em telas menores, reduz mais ainda */
+@media (max-width: 1200px){
+  .footer-top .info-item .title{ font-size: 14px; }
+  .footer-top .info-item span{ font-size: 12px; }
+}
