@@ -78,10 +78,10 @@
             <i class="fa-solid fa-phone ring__animation"></i>
             <div>
               <h6 class="title">Telefone:</h6>
-              <a href="tel:00222222200">(67) 99883-1010</a>
+              <a href="https://wa.me/5567998831010">(67) 99883-1010</a>
             </div>
           </div>
-          <a class="btn-two" href="page-contact.html">Contate Agora</a>
+          <a class="btn-two" href="https://wa.me/5567998831010">Contate Agora</a>
         </div>
         <div class="mobile-nav-toggler d-block d-lg-none"><i class="icon lnr-icon-bars"></i></div>
         <!-- Mobile Nav toggler -->
@@ -110,7 +110,7 @@
               <div class="contact-info-box">
                 <i class="icon lnr-icon-phone-handset"></i>
                 <span class="title">Call Now</span>
-                <a href="tel:+92880098670">+92 (8800) - 98670</a>
+                <a href="https://wa.me/5567998831010">+92 (8800) - 98670</a>
               </div>
             </li>
             <li>
@@ -239,7 +239,7 @@
 
                 </div>
                 <h4 class="title">Telefone</h4>
-                <p class="text">(67) 99883-1010</p>
+                <p class="text"><a href="https://wa.me/5567998831010">(67) 99883-1010</a></p>
               </div>
             </div>
           </div>
@@ -337,10 +337,10 @@
                 <div class="widget-content">
                   <h5 class="text">R. da Pátria, 443 - Vila Taveiropolis, Campo Grande - MS</h5>
                 </div>
-                <h4 class="widget-title mt-30">Contact</h4>
+                <h4 class="widget-title mt-30">Contato</h4>
                 <div class="widget-content">
                   <a href="mailto:support@gmail.com"> 3econstrucoesrurais@gmail.com </a>
-                  <h4 class="nuber"><a href="tel:012345688">(67) 99883-1010</a></h4>
+                  <h4 class="nuber"><a href="https://wa.me/5567998831010">(67) 99883-1010</a></h4>
                 </div>
               </div>
             </div>
@@ -349,7 +349,7 @@
         </div>
 
         <div class="footer-bottom">
-          <p class="copyright-text">Copyright ©2025, <a href="https://www.instagram.com/3econstrucoes_/">Ti-genesis</a> All Rights Reserved</p>
+          <p class="copyright-text">Copyright ©2025, <a href="https://www.ti-genesis.com.br">Ti-genesis</a> All Rights Reserved</p>
           <ul class="footer-nav">
             <li><a href="https://www.instagram.com/3econstrucoes_/"><i class="fa-brands fa-instagram"></i></a></li>
             <li><a href="https://wa.me/5567998831010"><i class="fa-brands fa-whatsapp"></i></a></li>
@@ -363,6 +363,75 @@
       <div class="sec-shape">
         <img class="animation__rotateAndScale" src="images/shape/globe-right.png" alt="Image">
       </div>
+
+<!-- GetButton.io widget -->
+  <script type="text/javascript">
+    (function () {
+      var options = {
+        whatsapp: "+5567998831010",
+        call_to_action: "",
+        button_color: "#d96f30",
+        position: "left",
+        order: "whatsapp,email",
+      };
+      var proto = document.location.protocol, host = "getbutton.io", url = proto + "//static." + host;
+      var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
+      s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
+      var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+    })();
+  </script>
+
+<style>
+  .wh-widget-send-button,
+  [class*="getbutton"],
+  [id*="getbutton"] {
+    opacity: 0;
+    transform: scale(.7);
+  }
+
+  .getbutton-animate-in{
+    animation: getbuttonPop .55s cubic-bezier(.2,.8,.2,1) forwards;
+  }
+
+  @keyframes getbuttonPop{
+    0%   { opacity:0; transform: scale(.7); }
+    70%  { opacity:1; transform: scale(1.06); }
+    100% { opacity:1; transform: scale(1); }
+  }
+</style>
+
+<script>
+(function () {
+  function tryAnimate() {
+    const el =
+      document.querySelector('.wh-widget-send-button') ||
+      document.querySelector('[class*="getbutton"]') ||
+      document.querySelector('[id*="getbutton"]');
+
+    if (el && !el.classList.contains('getbutton-animate-in')) {
+      // pequeno delay pra ficar mais suave
+      setTimeout(() => el.classList.add('getbutton-animate-in'), 150);
+      return true;
+    }
+    return false;
+  }
+
+  // tenta logo de cara
+  if (tryAnimate()) return;
+
+  // observa o DOM porque o widget entra async
+  const obs = new MutationObserver(() => {
+    if (tryAnimate()) obs.disconnect();
+  });
+
+  obs.observe(document.documentElement, { childList: true, subtree: true });
+
+  // fallback: para de observar depois de alguns segundos
+  setTimeout(() => obs.disconnect(), 8000);
+})();
+</script>
+
+
     </footer>
     <!-- Footer area end here -->
 
